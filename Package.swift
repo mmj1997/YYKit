@@ -17,8 +17,9 @@ let package = Package(
         .target(
             name: "YYKit",
             path: "YYKit",
-            publicHeadersPath: "YYKit",
+            publicHeadersPath: ".",
             cSettings: [
+		.headerSearchPath("."),
                 .headerSearchPath("**")
             ]
         )
